@@ -1,0 +1,24 @@
+header {
+    background-color: orange;
+    width: 300px;
+    @media #{$medium} {
+        width: 600px;
+    }
+}
+
+header {
+    nav {
+        background-color: pink;
+    }
+}
+
+button {
+    font-size: 40px;
+    border: 1px solid black;
+    border-radius: 100px;;
+    padding: 2px 20px;
+}
+
+.btn-2 {
+	@include example(red);
+}

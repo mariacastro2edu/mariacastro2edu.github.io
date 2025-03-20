@@ -1,0 +1,7 @@
+@mixin example($bgColor) {
+	font-size: 40px;
+	border: 10px solid darken(&bgColor, 10%);
+	border-radius: 100px;
+	padding: 10px 20px;
+	background-color: &bgColor;
+}
