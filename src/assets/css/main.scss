@@ -1,3 +1,16 @@
+@charset "utf-8";
+
+  @import 
+      "partials/mediaqueries",
+      "partials/mixins",
+      "partials/header",
+      "partials/footer",
+      "partials/variables",
+      "partials/buttons",
+      "partials/animations";
+
+
+
 body {
     min-width: 320px;
     margin: 0;
