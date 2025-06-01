@@ -64,6 +64,85 @@ p {
   color: #fff;
 }
 
+.tertiary-btn {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.563rem;
+  color: #0022FF;
+  border: 1px solid #0022FF;
+  border-radius: 1000px;
+  background-color: #fff;
+  padding: 22.4px 32px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease;
+  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
+  background-color: #fff;
+  color: #343434;
+  -webkit-transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3 ease;
+  transition: transform 0.3s ease, background-color 0.3 ease, -webkit-transform 0.3s ease;
+}
+.tertiary-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #343434;
+  color: #fff;
+}
+
+.quaternary-btn {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.563rem;
+  color: #0022FF;
+  border: 1px solid #0022FF;
+  border-radius: 1000px;
+  background-color: #fff;
+  padding: 22.4px 32px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease;
+  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  -webkit-transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3 ease;
+  transition: transform 0.3s ease, background-color 0.3 ease, -webkit-transform 0.3s ease;
+}
+.quaternary-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #fff;
+  color: #343434;
+}
+
+.chatgpt {
+  background-color: #DCF0FF;
+}
+
+.wise {
+  background-color: #CAF6AD;
+}
+
+.fbaul {
+  background-color: #ECE7FB;
+}
+
+.content {
+  background-color: #EEEEEE;
+}
+
+.bio {
+  background-color: #343434;
+}
+
 body {
   min-width: 320px;
   margin: 0;

@@ -8,3 +8,30 @@
         color: $tertiary-color;
     }
 }
+
+.tertiary-btn {
+    @include btn;
+    background-color: $tertiary-color;
+    color: $secondary-color;
+    transition: transform 0.3s ease, background-color 0.3 ease;
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: $secondary-color;
+        color: $tertiary-color;
+    }
+}
+
+.quaternary-btn {
+    @include btn;
+    background-color: transparent;
+    color: $tertiary-color;
+    border: 1px solid $tertiary-color;
+    transition: transform 0.3s ease, background-color 0.3 ease;
+
+    &:hover {
+    transform: scale(1.05);
+    background-color: $tertiary-color;
+    color: $secondary-color;
+    }
+}
