@@ -1,4 +1,37 @@
 // HOME
+p {
+    margin: 0;
+}
+
+.fraction {
+    padding: 77px 10px;
+
+    @media #{$large $xlarge} {
+        padding: 80px 152px 80px 152px;
+    }
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+}
+
+.card-visual {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card-logo {
+    max-width: 10px;
+    height: auto;
+}
+
+.card-title {
+    gap: 0px;
+}
+
 .chatgpt {
     background-color: $first-project-background;
 }

@@ -123,6 +123,38 @@ p {
   color: #343434;
 }
 
+p {
+  margin: 0;
+}
+
+.fraction {
+  padding: 77px 10px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.card-visual {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card-logo {
+  max-width: 80px;
+  height: auto;
+}
+
+.card-title {
+  gap: 0px;
+}
+
 .chatgpt {
   background-color: #DCF0FF;
 }
