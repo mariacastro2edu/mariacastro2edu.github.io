@@ -1,29 +1,48 @@
 // ALL
-h1 {
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+figure {
     margin: 0;
 }
 
-p {
-    margin: 0;
-}
 
-img, figure {
-    margin: 0;
+// HOME
+
+.hero-content, 
+.our-services,
+.our-philosophy {
+    padding: 130px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+
+    @media #{$large, $xlarge} {
+        padding: 173px 152px;
+    }
 }
 
 .content {
-    padding: 30px 30px 0px 30px;
-    
-    @media #{$medium} {
-        padding: 30px 50px;
-    }
+    max-width: 350px;
 
-    @media #{$large} {
-        padding: 30px 152px;
+    @media #{$medium, $large, $xlarge} {
+        max-width: 820px;
     }
 }
 
-// HOME
+.services-list {
+    display: grid;
+    gap: 50px;
+
+
+    @media #{$medium, $large, $xlarge} {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 80px;
+    }
+}
 
 
 // CARD
@@ -52,6 +71,7 @@ img, figure {
 .card-visual {
     width: 100%;
     border-radius: 20px;
+    box-shadow: 4px 4px 18px $shadow-color;
 }
 
 .card-logo {
@@ -108,19 +128,31 @@ img, figure {
     border-radius: 20px 20px 0px 0px;
 }
 
+.projects-content {
+    padding: 130px 50px;
+
+    @media #{$medium} {
+        padding: 130px 50px 130px 50px;
+    }
+
+    @media #{$large, $xlarge} {
+        padding: 173px 152px;
+    }
+}
+
 // COMPANY
-.bio {
+.company {
     background-color: $secondary-color;
 }
 
-.maria .constanca {
+.bio {
     display: flex;
     align-items: flex-end;
     gap: 80px;
     align-self: stretch;
 }
 
-.maria-content .constanca-content {
+.bio-content {
     display: flex;
     flex-direction: column;
     justify-content: center;

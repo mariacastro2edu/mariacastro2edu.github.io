@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="/assets/css/main.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Seashell</title>
+  <title>Seashells</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -31,9 +31,22 @@
                 </a>
             </div>
         </nav>
-</header>     
+</header>
+
+<script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function toggleMenu() {
+        var hamburger = document.getElementById("myLinks");
+        if (hamburger.style.display === "block") {
+            hamburger.style.display = "none";
+        } else {
+            hamburger.style.display = "block";
+        }
+        }
+        
+</script>     
       <section class="projects">
-        <div class="content">
+        <div class="projects-content">
             <h1>Featured projects</h1>
         </div>
 
@@ -222,15 +235,15 @@
         </ul>
 
         <section class="copyright">
-            <div class=”address”>
-            <p>Main office — Lisbon</p>
-            <p>Largo da Academia Nacional</p>
-            <p>de Belas-Artes 1249-058</p>
-            </div>
+            <address>
+                <p><strong>Main office — Lisbon</strong></p>
+                <p>Largo da Academia Nacional</p>
+                <p>de Belas-Artes 1249-058</p>
+            </address>
 
             <div class=”contacts”>
-            <p>malito@belasartes.pt</p>
-            <p>+351 933149321</p>
+                <a href="#" class="secondary-btn">mailto@belasartes.pt</a>        
+                <a href="#" class="secondary-btn">+351 933149321</a>
             </div>
         </section>
 

@@ -1,3 +1,155 @@
+/*@mixin crd {
+	border-radius: 20px 20px 0px 0px;
+	display: inline-flex;
+	padding: 80px 152px 0px 152px;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}*/
+h1 {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  font-size: 2.563rem;
+  line-height: 3.5rem;
+  color: #343434;
+}
+@media (min-width: 768px), (min-width: 1280px), (min-width: 1400px) {
+  h1 {
+    font-size: 4.438rem;
+    line-height: 6.063rem;
+  }
+}
+
+h2 {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+  color: #343434;
+}
+@media (min-width: 768px), (min-width: 1280px), (min-width: 1400px) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3.438rem;
+  }
+}
+
+p {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.563rem;
+  color: #343434;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+  }
+}
+@media (min-width: 1280px), (min-width: 1400px) {
+  p {
+    font-size: 2.5rem;
+    line-height: 3.438rem;
+  }
+}
+
+/*** NAVIGATION MENU ***/
+.topnav {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  border-bottom: 1px solid #343434;
+}
+@media (min-width: 1280px), (min-width: 1400px) {
+  .topnav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-height: 53px;
+  }
+}
+
+.topnav a {
+  color: #0022FF;
+  background-color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+@media (min-width: 1280px), (min-width: 1400px) {
+  .topnav a {
+    padding: 14px 20px;
+  }
+}
+
+.topnav a:hover {
+  background-color: #fff;
+  color: #343434;
+}
+
+.topnav #myLinks {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+}
+@media (min-width: 1280px), (min-width: 1400px) {
+  .topnav #myLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style-type: none;
+  }
+}
+
+a.icon {
+  color: #343434;
+}
+
+/* hamburger icon */
+.topnav a.icon {
+  /*background: #fff;*/
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media (min-width: 1280px), (min-width: 1400px) {
+  .topnav a.icon {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 1400px) {
+  .scroll-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow-x: hidden;
+    row-gap: 60px;
+  }
+}
+
+.logo {
+  max-width: 90px;
+}
+
 .social-media-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,6 +176,7 @@
           flex-direction: column;
   gap: 12px;
   padding: 24px;
+  text-decoration: none;
 }
 
 h1 {
@@ -71,15 +224,15 @@ p {
   }
 }
 
-.secondary-btn, .primary-btn {
+.primary-btn {
   font-family: "Manrope", Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.563rem;
   color: #0022FF;
   border: 1px solid #0022FF;
+  background-color: #0022FF;
   border-radius: 1000px;
-  background-color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
@@ -90,8 +243,37 @@ p {
   transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3 ease;
   transition: transform 0.3s ease, background-color 0.3 ease, -webkit-transform 0.3s ease;
+  color: #fff;
 }
-.secondary-btn:hover, .primary-btn:hover {
+.primary-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #fff;
+  color: #0022FF;
+}
+
+.secondary-btn {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.563rem;
+  color: #0022FF;
+  border: 1px solid #0022FF;
+  background-color: #0022FF;
+  border-radius: 1000px;
+  padding: 10px 20px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease;
+  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
+  -webkit-transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3 ease;
+  transition: transform 0.3s ease, background-color 0.3 ease, -webkit-transform 0.3s ease;
+  background-color: #fff;
+}
+.secondary-btn:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   background-color: #0022FF;
@@ -105,8 +287,8 @@ p {
   line-height: 1.563rem;
   color: #0022FF;
   border: 1px solid #0022FF;
+  background-color: #0022FF;
   border-radius: 1000px;
-  background-color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
@@ -116,10 +298,6 @@ p {
   background-color: #fff;
   color: #343434;
   border: 1px solid #343434;
-  -webkit-transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3 ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, -webkit-transform 0.3s ease;
 }
 .tertiary-btn:hover {
   -webkit-transform: scale(1.05);
@@ -135,8 +313,8 @@ p {
   line-height: 1.563rem;
   color: #0022FF;
   border: 1px solid #0022FF;
+  background-color: #0022FF;
   border-radius: 1000px;
-  background-color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
@@ -146,10 +324,6 @@ p {
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
-  -webkit-transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3 ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, -webkit-transform 0.3s ease;
 }
 .quaternary-btn:hover {
   -webkit-transform: scale(1.05);
@@ -158,29 +332,56 @@ p {
   color: #343434;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+figure {
   margin: 0;
 }
 
-p {
-  margin: 0;
+.hero-content,
+.our-services,
+.our-philosophy {
+  padding: 130px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 41px;
 }
-
-img, figure {
-  margin: 0;
+@media (min-width: 1280px), (min-width: 1400px) {
+  .hero-content,
+  .our-services,
+  .our-philosophy {
+    padding: 173px 152px;
+  }
 }
 
 .content {
-  padding: 30px 30px 0px 30px;
+  max-width: 350px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), (min-width: 1280px), (min-width: 1400px) {
   .content {
-    padding: 30px 50px;
+    max-width: 820px;
   }
 }
-@media (min-width: 1280px) {
-  .content {
-    padding: 30px 152px;
+
+.services-list {
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+}
+@media (min-width: 768px), (min-width: 1280px), (min-width: 1400px) {
+  .services-list {
+    -ms-grid-columns: 1fr 80px 1fr 80px 1fr 80px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
   }
 }
 
@@ -213,6 +414,8 @@ img, figure {
 .card-visual {
   width: 100%;
   border-radius: 20px;
+  -webkit-box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.1);
 }
 
 .card-logo {
@@ -278,11 +481,25 @@ img, figure {
   border-radius: 20px 20px 0px 0px;
 }
 
-.bio {
+.projects-content {
+  padding: 130px 50px;
+}
+@media (min-width: 768px) {
+  .projects-content {
+    padding: 130px 50px 130px 50px;
+  }
+}
+@media (min-width: 1280px), (min-width: 1400px) {
+  .projects-content {
+    padding: 173px 152px;
+  }
+}
+
+.company {
   background-color: #343434;
 }
 
-.maria .constanca {
+.bio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,7 +512,7 @@ img, figure {
       align-self: stretch;
 }
 
-.maria-content .constanca-content {
+.bio-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

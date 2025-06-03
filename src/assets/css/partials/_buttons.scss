@@ -1,12 +1,28 @@
-.secondary-btn, .primary-btn {
+.primary-btn {
     @include btn;
     transition: transform 0.3s ease, background-color 0.3 ease;
+    color: $tertiary-color;
+
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: $tertiary-color;
+        color: $primary-color;
+
+    }
+}
+
+.secondary-btn {
+    @include btn;
+    transition: transform 0.3s ease, background-color 0.3 ease;
+    background-color: $tertiary-color;
 
 
     &:hover {
         transform: scale(1.05);
         background-color: $primary-color;
         color: $tertiary-color;
+
     }
 }
 
@@ -15,7 +31,6 @@
     background-color: $tertiary-color;
     color: $secondary-color;
     border: 1px solid $secondary-color;
-    transition: transform 0.3s ease, background-color 0.3 ease;
 
     &:hover {
         transform: scale(1.05);
@@ -29,7 +44,6 @@
     background-color: transparent;
     color: $tertiary-color;
     border: 1px solid $tertiary-color;
-    transition: transform 0.3s ease, background-color 0.3 ease;
 
     &:hover {
     transform: scale(1.05);

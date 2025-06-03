@@ -5,19 +5,19 @@
 	line-height: 1.563rem;
     color: $primary-color;
 	border: 1px solid $primary-color;
+	background-color: $primary-color;
 	border-radius: 1000px;
-	background-color: $tertiary-color;
 	padding: 10px 20px;
 	text-decoration: none;
 	transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease;
 
 }
 
-@mixin crd {
+/*@mixin crd {
 	border-radius: 20px 20px 0px 0px;
 	display: inline-flex;
 	padding: 80px 152px 0px 152px;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-}
+}*/
