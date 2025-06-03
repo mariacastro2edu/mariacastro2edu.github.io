@@ -33,6 +33,8 @@ h2 {
 	font-family: $primary-font;
     font-size: 1.375rem;
 	line-height: 1.875rem;
+    font-weight: 400;
+    text-align: center;
     color: $secondary-color;
 
     @media #{$medium, $large, $xlarge} {

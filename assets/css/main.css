@@ -23,6 +23,8 @@ h2 {
   font-family: "Manrope", Arial, Helvetica, sans-serif;
   font-size: 1.375rem;
   line-height: 1.875rem;
+  font-weight: 400;
+  text-align: center;
   color: #343434;
 }
 @media (min-width: 768px), (min-width: 1280px), (min-width: 1400px) {
@@ -196,6 +198,8 @@ h2 {
   font-family: "Manrope", Arial, Helvetica, sans-serif;
   font-size: 1.375rem;
   line-height: 1.875rem;
+  font-weight: 400;
+  text-align: center;
   color: #343434;
 }
 @media (min-width: 768px), (min-width: 1280px), (min-width: 1400px) {
@@ -345,7 +349,7 @@ figure {
 .hero-content,
 .our-services,
 .our-philosophy {
-  padding: 130px 50px;
+  padding: 110px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +363,7 @@ figure {
   .hero-content,
   .our-services,
   .our-philosophy {
-    padding: 173px 152px;
+    padding: 160px 152px;
   }
 }
 
@@ -499,17 +503,45 @@ figure {
   background-color: #343434;
 }
 
+.dynamic-photo {
+  width: 100vw;
+  height: auto;
+}
+
 .bio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  gap: 80px;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  padding: 40px 0px 40px 0px;
+}
+@media (min-width: 768px), (min-width: 1280px) {
+  .bio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 80px;
+  }
+}
+
+.bio-visual {
+  max-width: 125px;
+  height: auto;
+  border-radius: 20px;
 }
 
 .bio-content {
@@ -520,17 +552,36 @@ figure {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 24px;
+}
+@media (min-width: 768px), (min-width: 1280px) {
+  .bio-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 80px;
+  }
 }
 
 .about {
   color: #fff;
+  padding: 0px 30px;
+  text-align: center;
+}
+@media (min-width: 768px), (min-width: 1280px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    gap: 80px;
+  }
 }
 
 body {

@@ -15,13 +15,13 @@ figure {
 .hero-content, 
 .our-services,
 .our-philosophy {
-    padding: 130px 50px;
+    padding: 110px 50px;
     display: flex;
     flex-direction: column;
     gap: 41px;
 
     @media #{$large, $xlarge} {
-        padding: 173px 152px;
+        padding: 160px 152px;
     }
 }
 
@@ -145,21 +145,53 @@ figure {
     background-color: $secondary-color;
 }
 
+.dynamic-photo {
+    width: 100vw;
+    height: auto;
+}
+
 .bio {
     display: flex;
-    align-items: flex-end;
-    gap: 80px;
-    align-self: stretch;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 40px 0px 40px 0px;
+
+    @media #{$medium, $large} {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 80px;
+    }
+}
+
+.bio-visual {
+    max-width: 125px;
+    height: auto;
+    border-radius: 20px;
 }
 
 .bio-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 24px;
+
+    @media #{$medium, $large} {
+        display: flex;
+        align-items: flex-start;
+        gap: 80px;
+    }
 }
 
 .about {
     color: $tertiary-color;
+    padding: 0px 30px;
+    text-align: center;
+
+    @media #{$medium, $large} {
+        display: flex;
+        text-align: left;
+        gap: 80px;
+    }
 }
