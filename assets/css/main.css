@@ -4,7 +4,7 @@ h1 {
   line-height: 3.5rem;
   color: #343434;
 }
-@media (min-width: 768px), (min-width: 1280px) {
+@media (min-width: 768px), (min-width: 1280px), (min-width: 1400px) {
   h1 {
     font-size: 4.438rem;
     line-height: 6.063rem;
@@ -17,7 +17,7 @@ h2 {
   line-height: 1.875rem;
   color: #343434;
 }
-@media (min-width: 768px), (min-width: 1280px) {
+@media (min-width: 768px), (min-width: 1280px), (min-width: 1400px) {
   h2 {
     font-size: 2.5rem;
     line-height: 3.438rem;
@@ -30,7 +30,7 @@ p {
   line-height: 1.563rem;
   color: #343434;
 }
-@media (min-width: 768px), (min-width: 1280px) {
+@media (min-width: 768px), (min-width: 1280px), (min-width: 1400px) {
   p {
     font-size: 2.5rem;
     line-height: 3.438rem;
@@ -127,8 +127,23 @@ p {
   margin: 0;
 }
 
+img, figure {
+  margin: 0;
+}
+
 .fraction {
-  padding: 77px 10px;
+  padding: 77px 30px;
+  border-radius: 20px 20px 0px 0px;
+}
+@media (min-width: 768px) {
+  .fraction {
+    padding: 60px 50px;
+  }
+}
+@media (min-width: 1280px) {
+  .fraction {
+    padding: 80px 152px;
+  }
 }
 
 .card {
@@ -138,7 +153,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 12px;
+  gap: 20px;
+  padding: 10px;
 }
 
 .card-visual {
@@ -147,12 +163,37 @@ p {
 }
 
 .card-logo {
-  max-width: 80px;
+  max-width: 40px;
   height: auto;
 }
+@media (min-width: 768px), (min-width: 1280px) {
+  .card-logo {
+    max-width: 80px;
+    height: auto;
+  }
+}
 
-.card-title {
-  gap: 0px;
+.card-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-chevron {
+  width: 30px;
+  text-decoration: none;
+}
+@media (min-width: 768px), (min-width: 1280px) {
+  .card-chevron {
+    width: 50px;
+    height: auto;
+  }
 }
 
 .chatgpt {
@@ -165,10 +206,6 @@ p {
 
 .fbaul {
   background-color: #ECE7FB;
-}
-
-.content {
-  background-color: #EEEEEE;
 }
 
 .bio {

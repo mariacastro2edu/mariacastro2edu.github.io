@@ -3,18 +3,31 @@ p {
     margin: 0;
 }
 
-.fraction {
-    padding: 77px 10px;
+img, figure {
+    margin: 0;
+}
 
-    @media #{$large $xlarge} {
-        padding: 80px 152px 80px 152px;
+
+// CARD
+
+.fraction {
+    padding: 77px 30px;
+    border-radius: 20px 20px 0px 0px;
+
+    @media #{$medium} {
+        padding: 60px 50px;
     }
+
+    @media #{$large} {
+        padding: 80px 152px;
+    }
+
 }
 
 .card {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
     padding: 10px;
 }
 
@@ -24,12 +37,29 @@ p {
 }
 
 .card-logo {
-    max-width: 10px;
+    max-width: 40px;
     height: auto;
+
+    @media #{$medium, $large} {
+        max-width: 80px;
+        height: auto;
+    }
 }
 
-.card-title {
-    gap: 0px;
+.card-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-chevron {
+    width: 30px;
+    text-decoration: none;
+
+    @media #{$medium, $large} {
+        width: 50px;
+        height: auto;
+    }
 }
 
 .chatgpt {
@@ -45,9 +75,7 @@ p {
 }
 
 // PROJECTS
-.content {
-    background-color: $full-background;
-}
+
 
 // COMPANY
 .bio {
