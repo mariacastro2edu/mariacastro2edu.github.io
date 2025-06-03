@@ -1,4 +1,8 @@
-// HOME
+// ALL
+h1 {
+    margin: 0;
+}
+
 p {
     margin: 0;
 }
@@ -7,11 +11,25 @@ img, figure {
     margin: 0;
 }
 
+.content {
+    padding: 30px 30px 0px 30px;
+    
+    @media #{$medium} {
+        padding: 30px 50px;
+    }
+
+    @media #{$large} {
+        padding: 30px 152px;
+    }
+}
+
+// HOME
+
 
 // CARD
 
 .fraction {
-    padding: 77px 30px;
+    padding: 40px 30px;
     border-radius: 20px 20px 0px 0px;
 
     @media #{$medium} {
@@ -40,7 +58,12 @@ img, figure {
     max-width: 40px;
     height: auto;
 
-    @media #{$medium, $large} {
+    @media #{$medium} {
+        max-width: 50px;
+        height: auto;
+    }
+
+    @media #{$large} {
         max-width: 80px;
         height: auto;
     }
@@ -56,7 +79,12 @@ img, figure {
     width: 30px;
     text-decoration: none;
 
-    @media #{$medium, $large} {
+    @media #{$medium} {
+        width: 40px;
+        height: auto;
+    }
+
+    @media #{$large} {
         width: 50px;
         height: auto;
     }
@@ -75,9 +103,31 @@ img, figure {
 }
 
 // PROJECTS
-
+.projects {
+    background-color: $full-background;
+    border-radius: 20px 20px 0px 0px;
+}
 
 // COMPANY
 .bio {
     background-color: $secondary-color;
+}
+
+.maria .constanca {
+    display: flex;
+    align-items: flex-end;
+    gap: 80px;
+    align-self: stretch;
+}
+
+.maria-content .constanca-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.about {
+    color: $tertiary-color;
 }

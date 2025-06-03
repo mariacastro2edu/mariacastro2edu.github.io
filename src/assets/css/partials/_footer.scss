@@ -1,0 +1,16 @@
+.social-media-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.copyright {    
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+}

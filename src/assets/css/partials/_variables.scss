@@ -46,8 +46,13 @@ p {
 	line-height: 1.563rem;
     color: $secondary-color;
 
-    @media #{$medium, $large, $xlarge} {
-        font-size: 2.5rem; //tablet & desktop
-        line-height: 3.438rem;
+    @media #{$medium} {
+        font-size: 1.375rem; //tablet & desktop
+        line-height: 1.875rem;
         }
+
+    @media #{$large, $xlarge} {
+        font-size: 2.5rem; //desktop
+        line-height: 3.438rem;
+    }
 }

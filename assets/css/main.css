@@ -1,3 +1,31 @@
+.social-media-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
 h1 {
   font-family: "Manrope", Arial, Helvetica, sans-serif;
   font-size: 2.563rem;
@@ -30,7 +58,13 @@ p {
   line-height: 1.563rem;
   color: #343434;
 }
-@media (min-width: 768px), (min-width: 1280px), (min-width: 1400px) {
+@media (min-width: 768px) {
+  p {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+  }
+}
+@media (min-width: 1280px), (min-width: 1400px) {
   p {
     font-size: 2.5rem;
     line-height: 3.438rem;
@@ -46,7 +80,7 @@ p {
   border: 1px solid #0022FF;
   border-radius: 1000px;
   background-color: #fff;
-  padding: 22.4px 32px;
+  padding: 10px 20px;
   text-decoration: none;
   -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
@@ -73,7 +107,7 @@ p {
   border: 1px solid #0022FF;
   border-radius: 1000px;
   background-color: #fff;
-  padding: 22.4px 32px;
+  padding: 10px 20px;
   text-decoration: none;
   -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
@@ -81,6 +115,7 @@ p {
   transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
   background-color: #fff;
   color: #343434;
+  border: 1px solid #343434;
   -webkit-transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3 ease;
@@ -102,7 +137,7 @@ p {
   border: 1px solid #0022FF;
   border-radius: 1000px;
   background-color: #fff;
-  padding: 22.4px 32px;
+  padding: 10px 20px;
   text-decoration: none;
   -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
@@ -123,6 +158,10 @@ p {
   color: #343434;
 }
 
+h1 {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
@@ -131,8 +170,22 @@ img, figure {
   margin: 0;
 }
 
+.content {
+  padding: 30px 30px 0px 30px;
+}
+@media (min-width: 768px) {
+  .content {
+    padding: 30px 50px;
+  }
+}
+@media (min-width: 1280px) {
+  .content {
+    padding: 30px 152px;
+  }
+}
+
 .fraction {
-  padding: 77px 30px;
+  padding: 40px 30px;
   border-radius: 20px 20px 0px 0px;
 }
 @media (min-width: 768px) {
@@ -166,7 +219,13 @@ img, figure {
   max-width: 40px;
   height: auto;
 }
-@media (min-width: 768px), (min-width: 1280px) {
+@media (min-width: 768px) {
+  .card-logo {
+    max-width: 50px;
+    height: auto;
+  }
+}
+@media (min-width: 1280px) {
   .card-logo {
     max-width: 80px;
     height: auto;
@@ -189,7 +248,13 @@ img, figure {
   width: 30px;
   text-decoration: none;
 }
-@media (min-width: 768px), (min-width: 1280px) {
+@media (min-width: 768px) {
+  .card-chevron {
+    width: 40px;
+    height: auto;
+  }
+}
+@media (min-width: 1280px) {
   .card-chevron {
     width: 50px;
     height: auto;
@@ -208,8 +273,47 @@ img, figure {
   background-color: #ECE7FB;
 }
 
+.projects {
+  background-color: #EEEEEE;
+  border-radius: 20px 20px 0px 0px;
+}
+
 .bio {
   background-color: #343434;
+}
+
+.maria .constanca {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 80px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.maria-content .constanca-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 24px;
+}
+
+.about {
+  color: #fff;
 }
 
 body {
