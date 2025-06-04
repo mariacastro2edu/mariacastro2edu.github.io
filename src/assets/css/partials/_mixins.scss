@@ -9,8 +9,6 @@
 	border-radius: 1000px;
 	padding: 10px 20px;
 	text-decoration: none;
-	transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease;
-
 }
 
 /*@mixin crd {
@@ -20,4 +18,40 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
+}*/
+
+
+
+/*a {
+	text-decoration: none;
+	color: #351435;
+	font-family: sans-serif;
+	font-size: 40px;
+	border: 3px solid #351435;
+	padding: 40px 80px;
+	position: relative;
+	overflow: hidden;
+}
+
+a:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #351435;
+	z-index: -1;
+	transform: translateY(-100%);
+	transition: 1s;
+	color: #fff;
+}
+
+a:hover:before {
+	transform: translateY(0);
+}
+
+a:hover {
+	color: #fff;
+	transition: 1s;
 }*/

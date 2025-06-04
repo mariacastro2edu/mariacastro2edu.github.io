@@ -1,0 +1,9 @@
+.dynamic-photo {
+    animation: moving 4.5s ease-in-out infinite;
+}
+
+@keyframes moving {
+	0% {transform: translateY(0)}
+	50% {transform: translateY(150px)}
+    100% {transform: translateY(0)}
+}

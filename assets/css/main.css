@@ -6,6 +6,39 @@
 	justify-content: flex-end;
 	align-items: center;
 }*/
+/*a {
+	text-decoration: none;
+	color: #351435;
+	font-family: sans-serif;
+	font-size: 40px;
+	border: 3px solid #351435;
+	padding: 40px 80px;
+	position: relative;
+	overflow: hidden;
+}
+
+a:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #351435;
+	z-index: -1;
+	transform: translateY(-100%);
+	transition: 1s;
+	color: #fff;
+}
+
+a:hover:before {
+	transform: translateY(0);
+}
+
+a:hover {
+	color: #fff;
+	transition: 1s;
+}*/
 h1 {
   font-family: "Manrope", Arial, Helvetica, sans-serif;
   font-size: 2.563rem;
@@ -312,10 +345,6 @@ p {
   border-radius: 1000px;
   padding: 10px 20px;
   text-decoration: none;
-  -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
   -webkit-transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3 ease;
@@ -340,10 +369,6 @@ p {
   border-radius: 1000px;
   padding: 10px 20px;
   text-decoration: none;
-  -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
   -webkit-transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3 ease;
@@ -368,10 +393,6 @@ p {
   border-radius: 1000px;
   padding: 10px 20px;
   text-decoration: none;
-  -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
   background-color: #fff;
   color: #343434;
   border: 1px solid #343434;
@@ -394,10 +415,6 @@ p {
   border-radius: 1000px;
   padding: 10px 20px;
   text-decoration: none;
-  -webkit-transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, color 0.3 ease, -webkit-transform 0.3s ease;
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
@@ -409,6 +426,40 @@ p {
   color: #343434;
 }
 
+.dynamic-photo {
+  -webkit-animation: moving 4.5s ease-in-out infinite;
+          animation: moving 4.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes moving {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moving {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 h1,
 h2,
 h3,
@@ -422,7 +473,7 @@ figure {
 
 .fraction {
   padding: 40px 30px;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 0 0;
   margin-top: -15px;
 }
 @media (min-width: 768px) {
@@ -661,10 +712,6 @@ figure {
   .bio {
     display: -ms-grid;
     display: grid;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -748,6 +795,38 @@ figure {
     text-align: left;
     gap: 80px;
   }
+}
+
+.grid-visual {
+  border-radius: 20px;
+}
+
+.grid-DXD figure {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  padding: 128px 20px;
+}
+
+.grid-DXD img:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/span 2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-DXD img:nth-child(2),
+.grid-DXD img:nth-child(3) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
