@@ -1,0 +1,37 @@
+// HOME
+.hero-content, 
+.our-services,
+.our-philosophy {
+    padding: 110px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+
+    @media #{$large, $xlarge} {
+        padding: 160px 152px;
+    }
+}
+
+.content {
+    width: fit-content;
+
+    @media #{$medium, $large, $xlarge} {
+        max-width: 820px;
+    }
+}
+
+.services-list {
+    display: grid;
+    gap: 50px;
+
+    @media #{$medium} {
+        grid-template-columns: 2fr 2fr;
+        grid-column-gap: 80px;
+    }
+
+
+    @media #{$large, $xlarge} {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 80px;
+    }
+}

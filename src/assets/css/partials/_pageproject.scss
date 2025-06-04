@@ -1,0 +1,25 @@
+// PROJECT PAGE
+.top-project-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero-text {
+    padding-top: 86px;
+}
+
+.back-chevron {
+    width: 30px;
+    text-decoration: none;
+
+    @media #{$medium} {
+        width: 40px;
+        height: auto;
+    }
+
+    @media #{$large} {
+        width: 50px;
+        height: auto;
+    }
+}

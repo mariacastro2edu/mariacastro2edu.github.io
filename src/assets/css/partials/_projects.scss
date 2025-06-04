@@ -1,0 +1,17 @@
+// PROJECTS
+.projects {
+    background-color: $full-background;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.projects-content {
+    padding: 130px 50px;
+
+    @media #{$medium} {
+        padding: 130px 50px 130px 50px;
+    }
+
+    @media #{$large, $xlarge} {
+        padding: 173px 152px;
+    }
+}
