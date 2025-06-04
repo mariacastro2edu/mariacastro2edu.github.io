@@ -34,7 +34,6 @@ h2 {
     font-size: 1.375rem;
 	line-height: 1.875rem;
     font-weight: 400;
-    text-align: center;
     color: $secondary-color;
 
     @media #{$medium, $large, $xlarge} {
@@ -55,7 +54,7 @@ p {
         }
 
     @media #{$large, $xlarge} {
-        font-size: 2.5rem; //desktop
-        line-height: 3.438rem;
+        font-size: 1.5rem; //desktop
+        line-height: 2.125rem;
     }
 }
