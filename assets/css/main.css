@@ -619,6 +619,15 @@ figure {
   -webkit-box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.1);
           box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.card-visual:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .card-logo {

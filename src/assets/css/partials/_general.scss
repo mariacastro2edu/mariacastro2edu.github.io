@@ -38,6 +38,12 @@ figure {
     border-radius: 20px;
     box-shadow: 4px 4px 18px $shadow-color;
     margin-bottom: 20px;
+    transition: transform 0.4s ease-in-out;
+
+}
+
+.card-visual:hover {
+    transform: scale(1.03);
 }
 
 .card-logo {
