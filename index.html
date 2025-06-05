@@ -10,12 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico">
 </head></head>
 <body>
 <header>
         <nav>
             <div class="topnav">
-                <a href="/index.html" class="active">Seashells</a>
+                <a href="/index.html" class="active">
+                    <img class="logo" src="src/assets/img/seashells-logo.png" alt="Seashells logo">
+                </a>
                 <ul id="myLinks">
                     <li>
                         <a href="/">Home</a>
@@ -27,7 +30,7 @@
                         <a href="/company.html">Company</a>
                     </li>
                 </ul>
-                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" title="Open menu">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
@@ -53,8 +56,8 @@
         </div>
 
         <div>
-            <a href="company.html" class="secondary-btn"><span>About us</span></a>        
-            <a href="projects.html" class="primary-btn"><span>Explore our work</span></a>
+            <a href="company.html" class="secondary-btn" title="Know more about Seashells"><span>About us</span></a>        
+            <a href="projects.html" class="primary-btn" title="See featured projects"><span>Explore our work</span></a>
         </div>
       </div>
     </section>
@@ -76,7 +79,7 @@
                 </div>
               </div>
               <a href="chatgpt.html">
-                <img class="card-chevron" src="src/assets/svg/chevron-right.svg" alt="Chevron Right"/>
+                <img class="card-chevron" src="src/assets/svg/chevron-right.svg" alt="Chevron Right" title="Go to projects"/>
               </a>
             </div>
 
@@ -102,7 +105,7 @@
                 </div>
               </div>
               <a href="wise.html">
-                <img class="card-chevron" src="src/assets/svg/chevron-right.svg" alt="Chevron Right"/>
+                <img class="card-chevron" src="src/assets/svg/chevron-right.svg" alt="Chevron Right" title="Go to projects"/>
               </a>
             </div>
 
@@ -128,7 +131,7 @@
                 </div>
               </div>
               <a href="fbaul.html">
-                <img class="card-chevron" src="src/assets/svg/chevron-right.svg" alt="Chevron Right"/>
+                <img class="card-chevron" src="src/assets/svg/chevron-right.svg" alt="Chevron Right" title="Go to projects"/>
               </a>
             </div>
 
@@ -145,9 +148,7 @@
 
 
         <section class="our-services">
-
           <h1>Our services</h1>
-          <hr>
           <div class="services-list">
             <span>
                 <p><strong>UX/UI</strong></p>
@@ -177,14 +178,14 @@
             <div class="bio">
                 <div>
                     <figure>
-                      <img class="bio-visual" src="src/assets/img/Our-Philosophy-B.jpg" alt="Image representing the philosophy of the agency">
+                      <img class="bio-visual" src="src/assets/img/Our-Philosophy-B.jpg" alt="Designers working cooperatively around a table">
                     </figure>
                 </div>
 
                 <div class="bio-content">
                     <p><strong>At our agency, we believe design has the power to transform experiences and bring people closer together.</strong></p>
                     <p>We value simplicity, empathy, and innovation, crafting solutions that not only solve real problems but also tell meaningful stories. </p>
-                    <a href="company.html" class="tertiary-btn"><span>About us</span></a>
+                    <a href="company.html" class="tertiary-btn" title="Know more about Seashells"><span>About us</span></a>
                 </div>
             </div>
             
@@ -194,7 +195,7 @@
       
 <footer>
         <div class="marquee">
-            <h1 class="follow">Follow us · Follow us · Follow us · Follow us · Follow us · Follow us · Follow us · Follow us</h1>
+            <h1 class="follow">Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us</h1>
         </div>
 
         <ul class="social-media-list">
@@ -236,8 +237,8 @@
             </address>
 
             <div class="copyright-text">
-                <a href="https://workspace.google.com/intl/pt-PT/gmail/" target=_blank class="secondary-btn"><span>mailto@belasartes.pt</span></a>        
-                <a href="https://www.whatsapp.com/" target=_blank class="secondary-btn"><span>+351 933149321</span></a>
+                <a href="https://workspace.google.com/intl/pt-PT/gmail/" target=_blank class="secondary-btn" title="Send us an email"><span>mailto@belasartes.pt</span></a>        
+                <a href="https://www.whatsapp.com/" target=_blank class="secondary-btn" title="Send us a message"><span>+351 933149321</span></a>
            </div>
 
         </section>

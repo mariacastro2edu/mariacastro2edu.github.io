@@ -16,34 +16,22 @@
 .primary-btn {
     @include btn;
     @include btn-animated($primary-color, $primary-bg, $primary-text, $primary-hover-bg, $primary-hover-text);
-
-    position: relative;
-    z-index: 1;
 }
 
 .secondary-btn {
     @include btn;
     @include btn-animated($secondary-border, $secondary-bg, $secondary-text, $secondary-hover-bg, $secondary-hover-text);
-
-    position: relative;
-    z-index: 1;
     
 }
 
 .tertiary-btn {
     @include btn;
     @include btn-animated($tertiary-border, $tertiary-bg, $tertiary-text, $tertiary-hover-bg, $tertiary-hover-text);
-    
-    position: relative;
-    z-index: 1;
 }
 
 .quaternary-btn {
     @include btn;
     @include btn-animated($quaternary-border, $quaternary-bg, $quaternary-text, $quaternary-hover-bg, $quaternary-hover-text);
-    
-    position: relative;
-    z-index: 1;
     
     /*background-color: transparent;
     color: $tertiary-color;

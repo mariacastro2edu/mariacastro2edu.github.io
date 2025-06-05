@@ -10,12 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="src/assets/img/favicon.ico">
 </head>
 <body>
 <header>
         <nav>
             <div class="topnav">
-                <a href="/index.html" class="active">Seashells</a>
+                <a href="/index.html" class="active">
+                    <img class="logo" src="src/assets/img/seashells-logo.png" alt="Seashells logo">
+                </a>
                 <ul id="myLinks">
                     <li>
                         <a href="/">Home</a>
@@ -27,7 +30,7 @@
                         <a href="/company.html">Company</a>
                     </li>
                 </ul>
-                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" title="Open menu">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
@@ -53,7 +56,7 @@
 
         <main>
 
-          <div class="fraction">
+          <div class="fraction" id="section-chatgpt">
             
             <div class="card-component">
               <div class="card">
@@ -79,7 +82,7 @@
               </div>
           </div>
 
-          <div class="fraction">
+          <div class="fraction" id="section-wise">
             
             <div class="card-component">
               <div class="card">
@@ -105,7 +108,7 @@
             </div>
           </div>
 
-          <div class="fraction">
+          <div class="fraction" id="section-zoom">
             
             <div class="card-component">
               <div class="card">
@@ -131,7 +134,7 @@
             </div>
           </div>
 
-          <div class="fraction">
+          <div class="fraction" id="section-fbaul">
             
             <div class="card-component">
               <div class="card">
@@ -157,7 +160,7 @@
             </div>
           </div>
 
-          <div class="fraction">
+          <div class="fraction" id="section-tsim">
             
             <div class="card-component">
               <div class="card">
@@ -183,7 +186,7 @@
             </div>
           </div>
 
-          <div class="fraction">
+          <div class="fraction" id="section-arrisca">
             
             <div class="card-component">
               <div class="card">
@@ -215,7 +218,7 @@
       
 <footer>
         <div class="marquee">
-            <h1 class="follow">Follow us · Follow us · Follow us · Follow us · Follow us · Follow us · Follow us · Follow us</h1>
+            <h1 class="follow">Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us • Follow us</h1>
         </div>
 
         <ul class="social-media-list">
@@ -257,8 +260,8 @@
             </address>
 
             <div class="copyright-text">
-                <a href="https://workspace.google.com/intl/pt-PT/gmail/" target=_blank class="secondary-btn"><span>mailto@belasartes.pt</span></a>        
-                <a href="https://www.whatsapp.com/" target=_blank class="secondary-btn"><span>+351 933149321</span></a>
+                <a href="https://workspace.google.com/intl/pt-PT/gmail/" target=_blank class="secondary-btn" title="Send us an email"><span>mailto@belasartes.pt</span></a>        
+                <a href="https://www.whatsapp.com/" target=_blank class="secondary-btn" title="Send us a message"><span>+351 933149321</span></a>
            </div>
 
         </section>
