@@ -19,6 +19,18 @@
     }
 }
 
+.hero-company {
+    padding: 110px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+
+    @media #{$large, $xlarge} {
+        padding: 160px 152px;
+    }
+}
+
 .dynamic-photo {
     width: 100vw;
     height: auto;

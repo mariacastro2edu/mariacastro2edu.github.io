@@ -619,13 +619,16 @@ figure {
   -webkit-box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.1);
           box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+}
+
+.card-animation {
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
-.card-visual:hover {
+.card-animation:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
@@ -810,6 +813,24 @@ figure {
 @media (min-width: 768px), (min-width: 1280px), (min-width: 1400px) {
   .hero-title {
     max-width: 820px;
+  }
+}
+
+.hero-company {
+  padding: 110px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+  text-align: center;
+}
+@media (min-width: 1280px), (min-width: 1400px) {
+  .hero-company {
+    padding: 160px 152px;
   }
 }
 
