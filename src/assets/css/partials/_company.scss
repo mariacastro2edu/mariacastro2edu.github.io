@@ -96,7 +96,15 @@
 .grid-DXD figure {
   display: grid;
   gap: 10px;
-  padding: 128px 20px;
+  padding: 80px 20px;
+
+  @media #{$medium} {
+        padding: 152px 20px;
+    }
+
+    @media #{$large, $xlarge} {
+        padding: 152px 220px;
+    }
 }
 
 .grid-DXD img:nth-child(1) {

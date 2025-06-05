@@ -1,15 +1,48 @@
 @mixin btn {
 	font-family: $primary-font;
-    font-size: 1.125rem;
+  font-size: 1.125rem;
 	font-weight: 400;
 	line-height: 1.563rem;
-    color: $primary-color;
+  color: $primary-color;
+  display: inline-block;
 	border: 1px solid $primary-color;
 	background-color: $primary-color;
 	border-radius: 1000px;
 	padding: 10px 20px;
 	text-decoration: none;
 }
+
+@mixin btn-animated($primary-border, $primary-bg, $primary-text, $primary-hover-bg, $primary-hover-text) {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid $primary-border;
+  background-color: $primary-bg;
+  color: $primary-text;
+  transition: color 0.3s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $primary-hover-bg;
+    border-radius: inherit;
+    z-index: 0;
+    transform: translateY(-100%);
+    transition: transform 0.4s;
+  }
+
+  &:hover::before {
+    transform: translateY(0);
+  }
+
+  &:hover {
+    color: $primary-hover-text;
+  }
+}
+
 
 /*@mixin crd {
 	border-radius: 20px 20px 0px 0px;
@@ -18,40 +51,4 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-}*/
-
-
-
-/*a {
-	text-decoration: none;
-	color: #351435;
-	font-family: sans-serif;
-	font-size: 40px;
-	border: 3px solid #351435;
-	padding: 40px 80px;
-	position: relative;
-	overflow: hidden;
-}
-
-a:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-color: #351435;
-	z-index: -1;
-	transform: translateY(-100%);
-	transition: 1s;
-	color: #fff;
-}
-
-a:hover:before {
-	transform: translateY(0);
-}
-
-a:hover {
-	color: #fff;
-	transition: 1s;
 }*/

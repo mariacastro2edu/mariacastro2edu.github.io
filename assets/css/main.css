@@ -6,39 +6,6 @@
 	justify-content: flex-end;
 	align-items: center;
 }*/
-/*a {
-	text-decoration: none;
-	color: #351435;
-	font-family: sans-serif;
-	font-size: 40px;
-	border: 3px solid #351435;
-	padding: 40px 80px;
-	position: relative;
-	overflow: hidden;
-}
-
-a:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-color: #351435;
-	z-index: -1;
-	transform: translateY(-100%);
-	transition: 1s;
-	color: #fff;
-}
-
-a:hover:before {
-	transform: translateY(0);
-}
-
-a:hover {
-	color: #fff;
-	transition: 1s;
-}*/
 h1 {
   font-family: "Manrope", Arial, Helvetica, sans-serif;
   font-size: 2.563rem;
@@ -111,7 +78,6 @@ p {
 }
 
 .topnav a {
-  color: #0022FF;
   background-color: #fff;
   padding: 14px 16px;
   text-decoration: none;
@@ -153,7 +119,8 @@ a.icon {
 
 /* hamburger icon */
 .topnav a.icon {
-  /*background: #fff;*/
+  background: transparent;
+  color: #343434;
   display: block;
   position: absolute;
   right: 0;
@@ -163,6 +130,14 @@ a.icon {
   .topnav a.icon {
     display: none;
   }
+}
+
+.topnav a.icon i {
+  color: #343434;
+}
+
+.topnav a.icon:hover i {
+  color: #0022FF;
 }
 
 @media (min-width: 1280px), (min-width: 1400px) {
@@ -236,6 +211,18 @@ a.icon {
   margin: 0;
 }
 
+.social-media-list li:hover .icon {
+  color: #0022FF;
+  fill: #0022FF;
+}
+
+.icon {
+  color: #343434;
+  fill: #343434;
+  width: 40px;
+  height: auto;
+}
+
 .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,6 +273,17 @@ address {
   text-align: center;
   margin-bottom: 25px;
   text-decoration: none;
+  color: #343434;
+}
+
+.privacy-policy a {
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.privacy-policy p:hover {
+  color: #0022FF;
 }
 
 h1 {
@@ -334,27 +332,73 @@ p {
   }
 }
 
+.primary-btn,
+.secondary-btn,
+.tertiary-btn,
+.quaternary-btn {
+  position: relative;
+  z-index: 1;
+}
+.primary-btn span,
+.primary-btn strong,
+.primary-btn em,
+.secondary-btn span,
+.secondary-btn strong,
+.secondary-btn em,
+.tertiary-btn span,
+.tertiary-btn strong,
+.tertiary-btn em,
+.quaternary-btn span,
+.quaternary-btn strong,
+.quaternary-btn em {
+  position: relative;
+  z-index: 1;
+}
+
 .primary-btn {
   font-family: "Manrope", Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.563rem;
   color: #0022FF;
+  display: inline-block;
   border: 1px solid #0022FF;
   background-color: #0022FF;
   border-radius: 1000px;
   padding: 10px 20px;
   text-decoration: none;
-  -webkit-transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3 ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, -webkit-transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #0022FF;
+  background-color: #0022FF;
   color: #fff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  position: relative;
+  z-index: 1;
+}
+.primary-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: inherit;
+  z-index: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.primary-btn:hover::before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 .primary-btn:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  background-color: #fff;
   color: #0022FF;
 }
 
@@ -364,21 +408,44 @@ p {
   font-weight: 400;
   line-height: 1.563rem;
   color: #0022FF;
+  display: inline-block;
   border: 1px solid #0022FF;
   background-color: #0022FF;
   border-radius: 1000px;
   padding: 10px 20px;
   text-decoration: none;
-  -webkit-transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: background-color 0.3 ease, -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3 ease;
-  transition: transform 0.3s ease, background-color 0.3 ease, -webkit-transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #0022FF;
   background-color: #fff;
+  color: #0022FF;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  position: relative;
+  z-index: 1;
+}
+.secondary-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0022FF;
+  border-radius: inherit;
+  z-index: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.secondary-btn:hover::before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 .secondary-btn:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  background-color: #0022FF;
   color: #fff;
 }
 
@@ -388,19 +455,44 @@ p {
   font-weight: 400;
   line-height: 1.563rem;
   color: #0022FF;
+  display: inline-block;
   border: 1px solid #0022FF;
   background-color: #0022FF;
   border-radius: 1000px;
   padding: 10px 20px;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #fff;
   background-color: #fff;
   color: #343434;
-  border: 1px solid #343434;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  position: relative;
+  z-index: 1;
+}
+.tertiary-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #343434;
+  border-radius: inherit;
+  z-index: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.tertiary-btn:hover::before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 .tertiary-btn:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  background-color: #343434;
   color: #fff;
 }
 
@@ -410,19 +502,53 @@ p {
   font-weight: 400;
   line-height: 1.563rem;
   color: #0022FF;
+  display: inline-block;
   border: 1px solid #0022FF;
   background-color: #0022FF;
   border-radius: 1000px;
   padding: 10px 20px;
   text-decoration: none;
-  background-color: transparent;
-  color: #fff;
+  position: relative;
+  overflow: hidden;
   border: 1px solid #fff;
+  background-color: #343434;
+  color: #fff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  position: relative;
+  z-index: 1;
+  /*background-color: transparent;
+  color: $tertiary-color;
+  border: 1px solid $tertiary-color;
+
+  &:hover {
+  transform: scale(1.05);
+  background-color: $tertiary-color;
+  color: $secondary-color;
+  }*/
+}
+.quaternary-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: inherit;
+  z-index: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.quaternary-btn:hover::before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 .quaternary-btn:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  background-color: #fff;
   color: #343434;
 }
 
@@ -626,7 +752,7 @@ figure {
 }
 @media (min-width: 768px) {
   .projects-content {
-    padding: 130px 50px 130px 50px;
+    padding: 130px 50px;
   }
 }
 @media (min-width: 1280px), (min-width: 1400px) {
@@ -805,7 +931,17 @@ figure {
   display: -ms-grid;
   display: grid;
   gap: 10px;
-  padding: 128px 20px;
+  padding: 80px 20px;
+}
+@media (min-width: 768px) {
+  .grid-DXD figure {
+    padding: 152px 20px;
+  }
+}
+@media (min-width: 1280px), (min-width: 1400px) {
+  .grid-DXD figure {
+    padding: 152px 220px;
+  }
 }
 
 .grid-DXD img:nth-child(1) {

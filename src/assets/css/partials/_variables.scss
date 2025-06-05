@@ -1,4 +1,4 @@
-//COLOURS
+// COLOURS
 
 $primary-color: #0022FF;
 $secondary-color: #343434;
@@ -10,9 +10,36 @@ $third-project-background: #ECE7FB;
 $shadow-color: rgba(0, 0, 0, 0.1);
 
 
+// BUTTONS
+
+$primary-border: #fff;
+$primary-bg: #0022FF;
+$primary-text: #fff;
+$primary-hover-bg: #fff;
+$primary-hover-text: #0022FF;
+
+$secondary-border: #0022FF;
+$secondary-bg: #fff;
+$secondary-text: #0022FF;
+$secondary-hover-bg: #0022FF;
+$secondary-hover-text: #fff;
+
+$tertiary-border: #fff;
+$tertiary-bg: #fff;
+$tertiary-text: #343434;
+$tertiary-hover-bg: #343434;
+$tertiary-hover-text: #fff;
+
+$quaternary-border: #fff;
+$quaternary-bg: #343434;
+$quaternary-text: #fff;
+$quaternary-hover-bg: #fff;
+$quaternary-hover-text: #343434;
 
 
-//FONTS
+
+
+// FONTS
 
 $primary-font: 'Manrope', Arial, Helvetica, sans-serif;
 
@@ -24,7 +51,7 @@ h1 {
     color: $secondary-color;
 
     @media #{$medium, $large, $xlarge} {
-    font-size: 4.438rem; //tablet & desktop
+    font-size: 4.438rem;
 	line-height: 6.063rem;
     }
 }
@@ -37,7 +64,7 @@ h2 {
     color: $secondary-color;
 
     @media #{$medium, $large, $xlarge} {
-    font-size: 2.5rem; //tablet & desktop
+    font-size: 2.5rem;
     line-height: 3.438rem;
     }
 }
@@ -49,12 +76,12 @@ p {
     color: $secondary-color;
 
     @media #{$medium} {
-        font-size: 1.375rem; //tablet & desktop
+        font-size: 1.375rem;
         line-height: 1.875rem;
         }
 
     @media #{$large, $xlarge} {
-        font-size: 1.5rem; //desktop
+        font-size: 1.5rem;
         line-height: 2.125rem;
     }
 }

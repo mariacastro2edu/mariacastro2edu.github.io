@@ -23,7 +23,6 @@
   }
 
   .topnav a {
-    color: $primary-color;
     background-color: $tertiary-color;
     padding: 14px 16px;
     text-decoration: none;
@@ -59,7 +58,8 @@
   
   /* hamburger icon */
   .topnav a.icon {
-    /*background: #fff;*/
+    background: transparent;
+    color: $secondary-color;
     display: block;
     position: absolute;
     right: 0;
@@ -68,6 +68,14 @@
     @media #{$large, $xlarge} {
       display: none;
     }
+  }
+
+  .topnav a.icon i {
+    color: $secondary-color;
+  }
+
+  .topnav a.icon:hover i {
+    color: $primary-color;
   }
 
   .scroll-container {
