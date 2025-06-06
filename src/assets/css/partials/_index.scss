@@ -1,9 +1,3 @@
-.card-title h2,
-span > h2 {
-    @extend p;
-    font-weight: 900;
-}
-
 .chatgpt {
     background-color: $first-project-background;
 }
@@ -24,6 +18,12 @@ span > h2 {
     }
 }
 
+.card-title h2,
+.service-item > h2 {
+    @extend p;
+    font-weight: 900;
+}
+
 .services-list {
     display: grid;
     gap: 50px;
@@ -32,7 +32,6 @@ span > h2 {
         grid-template-columns: 2fr 2fr;
         grid-column-gap: 80px;
     }
-
 
     @media #{$large, $xlarge} {
         grid-template-columns: 1fr 1fr 1fr 1fr;
