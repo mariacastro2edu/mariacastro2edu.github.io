@@ -10,6 +10,20 @@ figure {
     padding: 0;
 }
 
+// HOME
+.hero-content, 
+.our-services,
+.our-philosophy {
+    padding: 110px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @media #{$large, $xlarge} {
+        padding: 160px 152px;
+    }
+}
+
 // CARD
 .fraction {
     padding: 40px 30px;
@@ -85,14 +99,58 @@ figure {
     }
 }
 
-.chatgpt {
-    background-color: $first-project-background;
+// BIO
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding: 40px 0px;
+
+    @media #{$medium} {
+        padding: 40px 60px;
+    }
+
+    @media #{$large, $xlarge} {
+        display: grid;
+        align-items: flex-end;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 60px;
+    }
 }
 
-.wise {
-    background-color: $second-project-background;
+
+.bio-visual {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+
+    @media #{$medium} {
+        width: 300px;
+        height: auto;
+    }
+
+    @media #{$large} {
+        width: 100%;
+        height: auto;
+    }
 }
 
-.fbaul {
-    background-color: $third-project-background;
+.bio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding: 0px 60px;
+
+    @media #{$medium} {
+        padding: 0px 20px;
+    }
+    @media #{$large} {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+    }
 }

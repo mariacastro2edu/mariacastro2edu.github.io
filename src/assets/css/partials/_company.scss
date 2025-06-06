@@ -36,61 +36,6 @@
     height: auto;
 }
 
-.bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 24px;
-    padding: 40px 0px;
-
-    @media #{$medium} {
-        padding: 40px 60px;
-    }
-
-    @media #{$large, $xlarge} {
-        display: grid;
-        align-items: flex-end;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 60px;
-    }
-}
-
-
-.bio-visual {
-    width: 200px;
-    height: auto;
-    border-radius: 20px;
-
-    @media #{$medium} {
-        width: 300px;
-        height: auto;
-    }
-
-    @media #{$large} {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.bio-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 24px;
-    padding: 0px 60px;
-
-    @media #{$medium} {
-        padding: 0px 20px;
-    }
-    @media #{$large} {
-        display: flex;
-        align-items: flex-start;
-        text-align: left;
-    }
-}
-
 .constanca {
     display: flex;
     flex-direction: column;

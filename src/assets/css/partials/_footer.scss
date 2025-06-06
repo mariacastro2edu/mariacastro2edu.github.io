@@ -8,6 +8,10 @@
 .follow {
     display: inline-block;
     animation: slide-text 25s linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 }
 

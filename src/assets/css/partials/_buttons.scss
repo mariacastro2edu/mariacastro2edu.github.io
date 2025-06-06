@@ -32,14 +32,4 @@
 .quaternary-btn {
     @include btn;
     @include btn-animated($quaternary-border, $quaternary-bg, $quaternary-text, $quaternary-hover-bg, $quaternary-hover-text);
-    
-    /*background-color: transparent;
-    color: $tertiary-color;
-    border: 1px solid $tertiary-color;
-
-    &:hover {
-    transform: scale(1.05);
-    background-color: $tertiary-color;
-    color: $secondary-color;
-    }*/
 }

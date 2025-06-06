@@ -1,15 +1,13 @@
-// HOME
-.hero-content, 
-.our-services,
-.our-philosophy {
-    padding: 110px 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+.chatgpt {
+    background-color: $first-project-background;
+}
 
-    @media #{$large, $xlarge} {
-        padding: 160px 152px;
-    }
+.wise {
+    background-color: $second-project-background;
+}
+
+.fbaul {
+    background-color: $third-project-background;
 }
 
 .content {
