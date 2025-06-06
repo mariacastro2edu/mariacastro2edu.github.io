@@ -1,4 +1,14 @@
 // ALL
+body {
+    min-width: 320px;
+    margin: 0;
+  }
+
+html {
+scroll-behavior: smooth;
+overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -13,11 +23,12 @@ figure {
 // HOME
 .hero-content, 
 .our-services,
-.our-philosophy {
+.our-philosophy,
+.company {
     padding: 110px 50px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 80px;
 
     @media #{$large, $xlarge} {
         padding: 160px 152px;
@@ -87,6 +98,7 @@ figure {
 .card-chevron {
     width: 30px;
     text-decoration: none;
+    color: $secondary-color;
 
     @media #{$medium} {
         width: 40px;
@@ -99,24 +111,22 @@ figure {
     }
 }
 
+.card-chevron:hover {
+    color: $primary-color;
+}
+
 // BIO
 .bio {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 24px;
-    padding: 40px 0px;
-
-    @media #{$medium} {
-        padding: 40px 60px;
-    }
+    gap: 60px;
 
     @media #{$large, $xlarge} {
-        display: grid;
+        flex-direction: row;
         align-items: flex-end;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 60px;
+        text-align: left;
     }
 }
 
@@ -131,7 +141,7 @@ figure {
         height: auto;
     }
 
-    @media #{$large} {
+    @media #{$large, $xlarge} {
         width: 100%;
         height: auto;
     }
@@ -148,9 +158,11 @@ figure {
     @media #{$medium} {
         padding: 0px 20px;
     }
-    @media #{$large} {
-        display: flex;
-        align-items: flex-start;
+    @media #{$large, $xlarge} {
+        padding: 0;
+        width: 50%;
         text-align: left;
+        align-items: flex-start;
+
     }
 }

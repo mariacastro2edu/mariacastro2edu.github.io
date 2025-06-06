@@ -1,12 +1,6 @@
 // COMPANY
 .company {
     background-color: $secondary-color;
-    padding: 40px 0;
-
-    @media #{$medium, $large, $xlarge} {
-        padding: 128px 0;
-    }
-
 }
 
 .hero-title {
@@ -37,14 +31,8 @@
 }
 
 .constanca {
-    display: flex;
-    flex-direction: column;
-
-    @media #{$large} {
-        display: flex;
+     @media #{$large, $xlarge} {
         flex-direction: row-reverse;
-        padding: 24px 0px 24px 40px;
-        margin: 0;
     }
 }
 

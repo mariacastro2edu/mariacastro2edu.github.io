@@ -1,3 +1,17 @@
+.btn {
+	font-family: $primary-font;
+  font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 1.563rem;
+  color: $primary-color;
+  display: inline-block;
+	border: 1px solid $primary-color;
+	background-color: $primary-color;
+	border-radius: 1000px;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
 .primary-btn,
 .secondary-btn,
 .tertiary-btn,
@@ -14,22 +28,22 @@
 }
 
 .primary-btn {
-    @include btn;
+    @extend .btn;
     @include btn-animated($primary-color, $primary-bg, $primary-text, $primary-hover-bg, $primary-hover-text);
 }
 
 .secondary-btn {
-    @include btn;
+    @extend .btn;
     @include btn-animated($secondary-border, $secondary-bg, $secondary-text, $secondary-hover-bg, $secondary-hover-text);
     
 }
 
 .tertiary-btn {
-    @include btn;
+    @extend .btn;
     @include btn-animated($tertiary-border, $tertiary-bg, $tertiary-text, $tertiary-hover-bg, $tertiary-hover-text);
 }
 
 .quaternary-btn {
-    @include btn;
+    @extend .btn;
     @include btn-animated($quaternary-border, $quaternary-bg, $quaternary-text, $quaternary-hover-bg, $quaternary-hover-text);
 }

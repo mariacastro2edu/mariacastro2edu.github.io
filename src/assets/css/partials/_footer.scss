@@ -6,6 +6,7 @@
   padding: 40px 0;
 
 .follow {
+    @extend h1;
     display: inline-block;
     animation: slide-text 25s linear infinite;
 

@@ -1,3 +1,9 @@
+.card-title h2,
+span > h2 {
+    @extend p;
+    font-weight: 900;
+}
+
 .chatgpt {
     background-color: $first-project-background;
 }
