@@ -73,10 +73,6 @@ address {
     all: initial;
 }
 
-.address-title {
-  @extend p;
-}
-
 .privacy-policy {
   @extend p;
   text-align: center;
